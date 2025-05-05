@@ -67,7 +67,7 @@ elif(app_mode=="Disease Recognition"):
     image_url = "https://google.com"
     st.markdown(f"<a href='{image_url}' target='_blank'><button>Web Browser</button></a>", unsafe_allow_html=True)
     if(st.button("Show Image")):
-        st.image(test_image,width=4,use_column_width=True)
+        st.image(test_image,width=4,use_container_width=True)
     #Predict button
     if(st.button("Predict")):
         st.snow()
