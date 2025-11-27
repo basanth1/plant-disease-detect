@@ -20,11 +20,13 @@ app_mode = st.sidebar.selectbox("Select Page", ["Home", "About", "Disease Recogn
 
 # Home page
 if app_mode == "Home":
-    st.header("PLANT DISEASE RECOGNITION SYSTEM")
+    st.header("SMART PLANT DISEASE DETECTION AND
+FORECASTING SYSTEM")
     image_path = "home_page.jpeg"
     st.image(image_path, use_container_width=True)
     st.markdown("""
-    Welcome to the Plant Disease Recognition System! 🌿🔍
+    Welcome to the SMART PLANT DISEASE DETECTION AND
+FORECASTING SYSTEM! 🌿🔍
 
     Our mission is to help in identifying plant diseases efficiently. Upload an image of a plant, and our system will analyze it to detect any signs of diseases.
 
@@ -98,3 +100,4 @@ elif app_mode == "Disease Recognition":
                 st.success(f"Model is predicting it's a **{class_name[result_index]}**.")
             except Exception as e:
                 st.error(f"Prediction failed: {e}")
+
