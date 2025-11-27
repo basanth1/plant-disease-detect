@@ -20,8 +20,7 @@ app_mode = st.sidebar.selectbox("Select Page", ["Home", "About", "Disease Recogn
 
 # Home page
 if app_mode == "Home":
-    st.header("SMART PLANT DISEASE DETECTION AND
-FORECASTING SYSTEM")
+    st.header("SMART PLANT DISEASE DETECTION AND FORECASTING SYSTEM")
     image_path = "home_page.jpeg"
     st.image(image_path, use_container_width=True)
     st.markdown("""
@@ -100,4 +99,5 @@ elif app_mode == "Disease Recognition":
                 st.success(f"Model is predicting it's a **{class_name[result_index]}**.")
             except Exception as e:
                 st.error(f"Prediction failed: {e}")
+
 
